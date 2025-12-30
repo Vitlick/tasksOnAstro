@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+
+const {number, title, description} = Astro.props;
+---
+
+<Layout>
+    <div class="task-header">
+        <h3>{number}. {title}</h3>
+        <p>{description}</p>
+        <p><a href="/">Все задачи</a></p>
+    </div>
+    <slot></slot>
+</Layout>
