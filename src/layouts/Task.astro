@@ -8,7 +8,7 @@ const {number, title, description} = Astro.props;
     <div class="task-header">
         <h3>{number}. {title}</h3>
         <p>{description}</p>
-        <p><a href="/">Все задачи</a></p>
+        <p style="position: absolute; right:0; top:0; padding-right:10px;"><a href="/">Все задачи</a></p>
     </div>
     <slot></slot>
 </Layout>

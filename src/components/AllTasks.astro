@@ -1,13 +1,13 @@
 ---
 const allTasks = Object.values(import.meta.glob('../pages/tasks/*/index.astro', { eager: true }));
 
-const getShortFileNameWithouExt = (path:string) => {
+const getParentFolder = (path:string) => {
     const matches = path.match(/([^\/]+)[\/][^\/]+\.[^.]+$/);
     return (matches) ? matches[1] : path;
 }
 
 ---
 <ul>
-    {allTasks.map((task:any)=><li><a href={task.url}>{getShortFileNameWithouExt(task.file)}</a></li>)}
+    {allTasks.map((task:any)=><li><a href={task.url}>{getParentFolder(task.file)}</a></li>)}
 </ul>
 
