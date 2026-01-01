@@ -1,0 +1,17 @@
+---
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/218/index.astro";
+
+const number = 218;
+const title = 'Дивы по центру';
+const description = `Даны два дива разных размеров и кнопка. По клику на кнопку поставьте центр меньшего дива в центр большего.`;
+
+---
+
+<TaskLayout
+    number = {number}
+    title = {title}
+    description = {description}
+>
+    <Task />
+</TaskLayout>
