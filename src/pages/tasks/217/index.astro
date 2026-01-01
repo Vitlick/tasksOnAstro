@@ -1,16 +1,17 @@
 ---
-import Task from "../../../layouts/Task.astro";
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/217/index.astro";
 
 const number = 217;
 const title = 'Корректность скобок';
 const description = `Дана строка со скобками, например, такая: '((2 * 3) + 1)'. Проверьте корректность расстановки скобок: количество открывающий должно быть равно количеству закрывающих: '(2 + 3))' - некорретно, их порядок должен быть правильным: ')(2 + 3))' - некорретно.`;
+
 ---
 
-<Task
+<TaskLayout
     number = {number}
     title = {title}
     description = {description}
 >
-    <p>Lorem</p>
-
-</Task>
+    <Task />    
+</TaskLayout>

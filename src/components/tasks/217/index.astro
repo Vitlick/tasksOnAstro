@@ -1,0 +1,28 @@
+---
+const text = "((2 * 3) + 1)";
+const exps = [
+    "((2 * 3) + 1)",
+    "(2 + 3))",
+    ")(2 + 3))",
+    "(2 + 3)))(2 + 3))",
+    "((56-4) * 2)1 + (2 + 3))",
+    "((56-4) * 2)(1 + (2 + 3))",
+    "((56-4) * 2(1 + (2 + 3))",
+    "(56-4) * 2(1 + (2 + 3))",
+    "(56-4) * 2(1 + (2 + 3)",
+]
+---
+
+<div>
+  {exps.map(exp => (
+    <div class="exp" style="margin: 10px 0;">
+        <span class="exp-text">{exp}</span>
+        <span class="exp-checked"></span>
+    </div>
+  ))}
+  <input value='' placeholder="выражение" id="checkedStr" />
+  <div id="response" style="display: inline-block;"></div>
+</div>
+<script>
+  import "./index";
+</script>
