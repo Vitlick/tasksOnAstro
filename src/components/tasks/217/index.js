@@ -1,7 +1,5 @@
 import { pairedParenthesesIsCorrect } from "./task";
 
-console.log('task 217. Hello');
-
 const checkedStrElement = document.getElementById('checkedStr');
 
 const responseElement = document.getElementById('response');
