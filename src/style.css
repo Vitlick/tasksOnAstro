@@ -24,7 +24,6 @@ body {
 }
 
 .task-header {
-    /* padding: 0 5px; */
     margin-bottom: 20px;
 }
 
@@ -32,10 +31,7 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-    margin: 0.5em 0;
-}
-
+h5,
 p {
     margin: 0.5em 0;
 }
