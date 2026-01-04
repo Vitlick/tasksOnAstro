@@ -17,8 +17,6 @@ function showResult(corrected) {
 }
 
 [...document.querySelectorAll('.exp')].map(el => {
-    // console.log(el)
     const [, expEl, , respEl] = el.childNodes;
-    console.log(expEl, respEl);
     respEl.innerHTML = (pairedParenthesesIsCorrect(expEl.innerHTML));
 });
