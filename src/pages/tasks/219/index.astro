@@ -1,0 +1,17 @@
+---
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/219/index.astro";
+
+const number = 219;
+const title = 'Точка в центре';
+const description = `Дан див. По клику на этот див поставьте в центре этого дива точку.`;
+
+---
+
+<TaskLayout
+    number = {number}
+    title = {title}
+    description = {description}
+>
+    <Task />
+</TaskLayout>
