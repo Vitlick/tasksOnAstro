@@ -1,0 +1,17 @@
+---
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/221/index.astro";
+
+const number = 221;
+const title = 'Расстояние между центрами';
+const description = `Даны два дива. Найдите расстояние между их центрами.`;
+
+---
+
+<TaskLayout
+    number = {number}
+    title = {title}
+    description = {description}
+>
+    <Task />
+</TaskLayout>
