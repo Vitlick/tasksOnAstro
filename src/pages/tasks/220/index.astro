@@ -1,0 +1,17 @@
+---
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/220/index.astro";
+
+const number = 220;
+const title = 'Нарисовать диагонали';
+const description = `Дан див. Нарисуйте пунктирными линиями диагонали этого дива.`;
+
+---
+
+<TaskLayout
+    number = {number}
+    title = {title}
+    description = {description}
+>
+    <Task />
+</TaskLayout>
