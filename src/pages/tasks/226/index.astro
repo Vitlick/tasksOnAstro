@@ -1,0 +1,17 @@
+---
+import TaskLayout from "../../../layouts/Task.astro";
+import Task from "../../../components/tasks/226/index.astro";
+
+const number = 226;
+const title = 'Цветок';
+const description = `Нарисуйте цветок на канвасе.`;
+
+---
+
+<TaskLayout
+    number = {number}
+    title = {title}
+    description = {description}
+>
+    <Task />
+</TaskLayout>
